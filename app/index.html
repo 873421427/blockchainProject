@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MetaCoin - Truffle Webpack Demo w/ Frontend</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js" integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB" crossorigin="anonymous"></script>
+
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>MusicDapp</h1>
+  <!--<h2>Example Truffle Dapp</h2> -->
+  <h3 >Your user type is <span id="usertype"></span></h3>
+  <h3>You have <span class="black"><span id="balance"></span> yuan in music dapp</span></h3>
+  <h3>Your address is <span id="address"></span> </h3>
+
+  <br>
+  <h1></h1>
+  <!--
+
+    <br><label for="amount">Amount:</label><input type="text" id="amount" placeholder="e.g., 95"></input>
+    <br><label for="receiver">To Address:</label><input type="text" id="receiver" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+    <br><br><button id="send" onclick="App.sendCoin()">Send MetaCoin</button>
+  -->
+  <input tyep="text" id="indexid" placeholder="0">
+  <br><button id="change" onclick="App.changeAddress()">Change address</button>
+  <br><h3>recharge your account</h3>
+  <input type="text" id="rechargeMoney" placeholder="100">
+  <br><button id="recharge" onclick="App.rechargeMoney()">rechargeMoney</button>
+  <br><br>
+
+  <div id="logs"></div>
+
+  <span id="status"></span>
+  <br>
+  <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+</html>
